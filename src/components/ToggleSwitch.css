@@ -13,7 +13,7 @@ body {
   position: fixed; /* Use fixed positioning */
   bottom: 40px; /* Distance from the bottom of the page */
   right: 60px; /* Distance from the right of the page */
-  width: 93.5px; /* Adjusted width to be 10% larger than 85px */
+  width: 91.5px; /* Rounded to nearest 0.5 */
   display: inline-block;
   text-align: left;
 }
@@ -27,8 +27,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #bbb;
-  border-radius: 18.7px; /* Adjusted border-radius to be 10% larger than 17px */
-  height: 33.7px; /* Adjusted height to be 10% larger than 30.6px */
+  border-radius: 18.5px; /* Rounded to nearest 0.5 */
+  height: 33.5px; /* Rounded to nearest 0.5 */
   position: relative; /* Added position relative to help with inner positioning */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
@@ -52,33 +52,33 @@ body {
   flex: 1;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  font-size: 16.8px; /* Adjusted font size to be 10% larger than 15.3px */
+  font-size: 16.5px; /* Rounded to nearest 0.5 */
 }
 
 .switch {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30.9px; /* Adjusted width to be 10% larger than 28.1px */
-  height: 30.9px; /* Adjusted height to be 10% larger than 28.1px */
+  width: 30.5px; /* Rounded to nearest 0.5 */
+  height: 30.5px; /* Rounded to nearest 0.5 */
   background: #fff; /* Background color for the icon container */
   position: absolute;
-  top: 1.4px; /* Adjusted top to be 10% larger than 1.3px */
+  top: 1.5px; /* Rounded to nearest 0.5 */
   bottom: 0;
-  right: 1.9px; /* Adjusted right to be 10% larger than 1.7px */
+  right: 2px; /* Rounded to nearest whole number */
   border-radius: 50%; /* Make the switch a perfect circle */
   transition: all 0.3s ease-in 0s;
-  font-size: 16.8px; /* Adjusted font size to be 10% larger than 15.3px */
+  font-size: 16.5px; /* Rounded to nearest 0.5 */
 }
 
 .checkbox:checked + .label .text {
-  transform: translateX(14px); /* Adjusted translateX to be 10% larger than 12.75px */
+  transform: translateX(14px); /* Rounded to nearest whole number */
 }
 
 .checkbox:not(:checked) + .label .text {
-  transform: translateX(-14px); /* Adjusted translateX to be 10% larger than 12.75px */
+  transform: translateX(-14px); /* Rounded to nearest whole number */
 }
 
 .checkbox:checked + .label .switch {
-  right: 59px; /* Adjusted right value to be 10% larger than 53.55px */
+  right: 58px; /* Rounded to nearest whole number */
 }
