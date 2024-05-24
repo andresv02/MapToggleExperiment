@@ -10,11 +10,12 @@ body {
 }
 
 .toggle-switch {
-  position: relative;
-  width: 100px; /* Adjusted width to accommodate extra space */
+  position: fixed; /* Use fixed positioning */
+  bottom: 40px; /* Distance from the bottom of the page */
+  right: 60px; /* Distance from the right of the page */
+  width: 93.5px; /* Adjusted width to be 10% larger than 85px */
   display: inline-block;
   text-align: left;
-  top: 8px;
 }
 
 .checkbox {
@@ -26,8 +27,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #bbb;
-  border-radius: 20px;
-  height: 36px; /* Set height to match the icon size */
+  border-radius: 18.7px; /* Adjusted border-radius to be 10% larger than 17px */
+  height: 33.7px; /* Adjusted height to be 10% larger than 30.6px */
   position: relative; /* Added position relative to help with inner positioning */
 }
 
@@ -50,32 +51,33 @@ body {
   flex: 1;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  font-size: 16.8px; /* Adjusted font size to be 10% larger than 15.3px */
 }
 
 .switch {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33px; /* Set width to match the icon size */
-  height: 33px; /* Set height to match the icon size */
+  width: 30.9px; /* Adjusted width to be 10% larger than 28.1px */
+  height: 30.9px; /* Adjusted height to be 10% larger than 28.1px */
   background: #fff; /* Background color for the icon container */
   position: absolute;
-  top: 1.5;
+  top: 1.4px; /* Adjusted top to be 10% larger than 1.3px */
   bottom: 0;
-  right: 2px; /* Default position for unchecked state */
+  right: 1.9px; /* Adjusted right to be 10% larger than 1.7px */
   border-radius: 50%; /* Make the switch a perfect circle */
   transition: all 0.3s ease-in 0s;
-  font-size: 18px; /* Adjust font size for icon */
+  font-size: 16.8px; /* Adjusted font size to be 10% larger than 15.3px */
 }
 
 .checkbox:checked + .label .text {
-  transform: translateX(15px); /* Move text to the left when checked */
+  transform: translateX(14px); /* Adjusted translateX to be 10% larger than 12.75px */
 }
 
 .checkbox:not(:checked) + .label .text {
-  transform: translateX(-15px); /* Move text to the right when unchecked */
+  transform: translateX(-14px); /* Adjusted translateX to be 10% larger than 12.75px */
 }
 
 .checkbox:checked + .label .switch {
-  right: 63px; /* Adjusted right value for checked state */
+  right: 59px; /* Adjusted right value to be 10% larger than 53.55px */
 }
