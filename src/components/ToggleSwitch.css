@@ -1,0 +1,81 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply globally */
+}
+
+.container {
+  text-align: center;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 100px; /* Adjusted width to accommodate extra space */
+  display: inline-block;
+  text-align: left;
+  top: 8px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  height: 36px; /* Set height to match the icon size */
+  position: relative; /* Added position relative to help with inner positioning */
+}
+
+.inner {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure it takes full width */
+  height: 100%; /* Ensure it takes full height */
+  transition: background-color 0.3s ease-in 0s, justify-content 0.3s ease-in 0s;
+  background-color: #15a136; /* Default background color */
+  color: #fff; /* Default text color */
+}
+
+.inner.checked {
+  background-color: rgb(40, 89, 255); /* Background color for checked state */
+  color: #fff; /* Text color for checked state */
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px; /* Set width to match the icon size */
+  height: 33px; /* Set height to match the icon size */
+  background: #fff; /* Background color for the icon container */
+  position: absolute;
+  top: 1.5;
+  bottom: 0;
+  right: 2px; /* Default position for unchecked state */
+  border-radius: 50%; /* Make the switch a perfect circle */
+  transition: all 0.3s ease-in 0s;
+  font-size: 18px; /* Adjust font size for icon */
+}
+
+.checkbox:checked + .label .text {
+  transform: translateX(15px); /* Move text to the left when checked */
+}
+
+.checkbox:not(:checked) + .label .text {
+  transform: translateX(-15px); /* Move text to the right when unchecked */
+}
+
+.checkbox:checked + .label .switch {
+  right: 63px; /* Adjusted right value for checked state */
+}
