@@ -30,6 +30,7 @@ body {
   border-radius: 18.7px; /* Adjusted border-radius to be 10% larger than 17px */
   height: 33.7px; /* Adjusted height to be 10% larger than 30.6px */
   position: relative; /* Added position relative to help with inner positioning */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .inner {
